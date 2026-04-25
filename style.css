@@ -109,14 +109,12 @@ li {
 
 .score {
   color: hsla(0, 0%, 0%, 0.514);
-
 }
 
 .score strong {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
   font-size: 1.2rem;
-
 }
 
 li:nth-child(1) {
@@ -180,26 +178,24 @@ button:active {
   }
 }
 
-
-.attribution{
-    font-size: 1rem;
-    font-weight: 700;
-    color:hsl(0, 0%, 1%);
-    margin-top: 1rem;
-    text-align: center;
+.attribution {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 1%);
+  margin-top: 1rem;
+  text-align: center;
 }
 
-
-.attribution a{
-    color:  hsl(241, 81%, 54%);
-    text-decoration: none;
+.attribution a {
+  color: hsl(241, 81%, 54%);
+  text-decoration: none;
 }
 
- .attribution a:visited{
-        color: hsl(241, 81%, 54%);
-    }
+.attribution a:visited {
+  color: hsl(241, 81%, 54%);
+}
 
-.attribution a:hover{
-    color:hsl(252, 100%, 67%);
-    text-decoration: underline;
+.attribution a:hover {
+  color: hsl(252, 100%, 67%);
+  text-decoration: underline;
 }
