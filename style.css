@@ -6,6 +6,7 @@
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
+    padding: 1rem;
   background-color: hsl(221, 100%, 96%);
   display: flex;
   align-items: center;
@@ -14,12 +15,13 @@ body {
 }
 
 .card {
+    width: 100%;
+    max-width: 700px;
   background-color: white;
   display: flex;
   align-items: stretch;
-  width: 700px;
   border-radius: 2rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .result {
@@ -67,20 +69,102 @@ h1 {
   flex-direction: column;
 }
 
-h3{
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin: 1rem auto;
+h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 1rem auto;
 }
 
-p{
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 2rem;
+  color: hsla(0, 0%, 100%, 0.596);
+}
+
+li {
+  padding: 1rem;
+  margin-bottom: 0.9rem;
+  list-style: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.score{
+    color: black;
+}
+
+li:nth-child(1){
+ background-color: hsla(0, 100%, 67%, 0.089);
+ color: hsl(0, 100%, 67%);
+}
+
+li:nth-child(2){
+    background-color: hsla(39, 100%, 56%, 0.089);
+ color: hsl(39, 100%, 56%);
+}
+
+li:nth-child(3){
+    background-color: hsla(166, 100%, 37%, 0.089);
+ color: hsl(166, 100%, 37%);
+}
+
+li:nth-child(4){
+    background-color: hsla(234, 85%, 45%, 0.089);
+ color: hsl(234, 85%, 45%);
+}
+
+button{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
     font-size: 1rem;
-    font-weight: 400;
-    margin: 1rem 2rem;
-    color: hsla(0, 0%, 100%, 0.596);
+    font-weight: 700;
+    cursor: pointer;
 }
 
-li{
-    list-style: none;
+button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+button:active{
+      transform: scale(0.97);
+
+}
+
+
+@media (max-width: 600px) {
+  body {
+    display: block;
+    padding: 0;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .result {
+    border-radius: 0 0 2rem 2rem;
+  }
+
+
+  .summary {
+    padding: 1.5rem;
+  }
+}
