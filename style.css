@@ -6,7 +6,7 @@
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
-    padding: 1rem;
+  padding: 1rem;
   background-color: hsl(221, 100%, 96%);
   display: flex;
   align-items: center;
@@ -15,8 +15,8 @@ body {
 }
 
 .card {
-    width: 100%;
-    max-width: 700px;
+  width: 100%;
+  max-width: 700px;
   background-color: white;
   display: flex;
   align-items: stretch;
@@ -61,7 +61,7 @@ h1 {
   padding: 2rem;
   margin: 2rem auto;
   border-radius: 50%;
-  color: hsla(0, 0%, 100%, 0.596);
+  color: hsla(0, 0%, 100%, 0.425);
   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   display: flex;
   justify-content: center;
@@ -82,8 +82,14 @@ p {
   color: hsla(0, 0%, 100%, 0.596);
 }
 
+h2 {
+  padding: 0 0 2rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
 li {
-  padding: 1rem;
+  padding: 1.2rem;
   margin-bottom: 0.9rem;
   list-style: none;
   border-radius: 1rem;
@@ -94,59 +100,64 @@ li {
   justify-content: space-between;
 }
 
-.left{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.score {
+  color: hsla(0, 0%, 0%, 0.514);
 
 }
 
-.score{
-    color: black;
-}
-
-li:nth-child(1){
- background-color: hsla(0, 100%, 67%, 0.089);
- color: hsl(0, 100%, 67%);
-}
-
-li:nth-child(2){
-    background-color: hsla(39, 100%, 56%, 0.089);
- color: hsl(39, 100%, 56%);
-}
-
-li:nth-child(3){
-    background-color: hsla(166, 100%, 37%, 0.089);
- color: hsl(166, 100%, 37%);
-}
-
-li:nth-child(4){
-    background-color: hsla(234, 85%, 45%, 0.089);
- color: hsl(234, 85%, 45%);
-}
-
-button{
-    width: 100%;
-    padding: 1rem;
-    margin-top: 1.5rem;
-    border: none;
-    border-radius: 999px;
-    background-color: hsl(224, 30%, 27%);
-    color: white;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-button:hover{
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-}
-
-button:active{
-      transform: scale(0.97);
+.score strong {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+  font-size: 1.2rem;
 
 }
 
+li:nth-child(1) {
+  background-color: hsla(0, 100%, 67%, 0.089);
+  color: hsl(0, 100%, 67%);
+}
+
+li:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.089);
+  color: hsl(39, 100%, 56%);
+}
+
+li:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.089);
+  color: hsl(166, 100%, 37%);
+}
+
+li:nth-child(4) {
+  background-color: hsla(234, 85%, 45%, 0.089);
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 999px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+button:active {
+  transform: scale(0.97);
+}
 
 @media (max-width: 600px) {
   body {
@@ -162,7 +173,6 @@ button:active{
   .result {
     border-radius: 0 0 2rem 2rem;
   }
-
 
   .summary {
     padding: 1.5rem;
