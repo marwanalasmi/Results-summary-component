@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 .card {
@@ -177,4 +178,28 @@ button:active {
   .summary {
     padding: 1.5rem;
   }
+}
+
+
+.attribution{
+    font-size: 1rem;
+    font-weight: 700;
+    color:hsl(0, 0%, 1%);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+.attribution a{
+    color:  hsl(241, 81%, 54%);
+    text-decoration: none;
+}
+
+ .attribution a:visited{
+        color: hsl(241, 81%, 54%);
+    }
+
+.attribution a:hover{
+    color:hsl(252, 100%, 67%);
+    text-decoration: underline;
 }
