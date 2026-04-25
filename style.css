@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  align-items: stretch;
+  width: 700px;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.result {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(0, 0%, 100%);
+}
+
+.summary h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.summary {
+  flex: 1;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: hsla(0, 0%, 100%, 0.596);
+}
+
+.resultNumber span {
+  font-size: 4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.resultNumber {
+  height: 10rem;
+  width: 10rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 50%;
+  color: hsla(0, 0%, 100%, 0.596);
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 1rem auto;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 2rem;
+    color: hsla(0, 0%, 100%, 0.596);
+}
+
+li{
+    list-style: none;
+}
+
